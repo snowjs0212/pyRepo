@@ -28,7 +28,6 @@ df = pd.read_csv("Imunika_Pilot_Stage1_Final.csv")
 st.write(df.describe())
 
 st.header("Data header summary")
-<<<<<<< HEAD
 st.write(df_1.head(10))
 
 #### File import
