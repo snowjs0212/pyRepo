@@ -7,6 +7,7 @@ Created on Tue May  7 12:37:55 2024
 #### Packages
 import streamlit as st
 import pandas as pd
+import os
 
 #### Headers
 st.title("Joonsoo's first test on streamlit")
@@ -14,7 +15,7 @@ st.text("This is a testing environment to build a better analytics tool in the f
 st.markdown("**Gayun** is my wife, and she is cute(?).")
 
 #### API Keys
-os.environ["ANTHROPIC_API_ID"] = st.secrets["ANTHROPIC_API_KEY"]
+#os.environ["ANTHROPIC_API_ID"] = st.secrets["ANTHROPIC_API_KEY"]
 
 #### Imunika coffee data
 #### File import
