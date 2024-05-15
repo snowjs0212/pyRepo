@@ -3,6 +3,7 @@
 Created on Tue May  7 12:37:55 2024
 
 @author: Joonsoo
+Reference: https://github.com/andymcdgeo/streamlit_tutorial_series
 """
 #### Packages
 import streamlit as st
@@ -23,7 +24,6 @@ st.title("Joonsoo's first test on streamlit")
 st.text("This is a testing environment to build a better analytics tool in the future.")
 st.markdown("**Gayun** is my wife, and she is cute(?).")
 
-<<<<<<< HEAD
 #### API Keys
 os.environ["ANTHROPIC_API_ID"] = st.secrets["ANTHROPIC_API_KEY"]
 
@@ -32,21 +32,11 @@ st.set_page_config(page_title="Journal Companion", page_icon="📖")
 st.title("This is your journal companion")
 
 #### Imunika coffee data
-=======
-#### File import
-#uploaded_file = st.file_uploader("Upload your file here.")
-#
-#if uploaded_file:
-#    df = pd.read_csv(uploaded_file)
-#    st.write(df.describe())
-
->>>>>>> parent of 20db3ec (Update app.py)
 st.header("LookUp - Imunika coffee research data")
-df = pd.read_csv("Imunika_Pilot_Stage1_Final.csv")
-st.write(df.describe())
+df_1 = pd.read_csv("Imunika_Pilot_Stage1_Final.csv")
+st.write(df_1.describe())
 
 st.header("Data header summary")
-<<<<<<< HEAD
 st.write(df_1.head(10))
 
 #### File import
@@ -242,6 +232,3 @@ with st.sidebar:
         mime="text/csv",
         use_container_width=True,
     )
-=======
-st.write(df.head(10))
->>>>>>> parent of 20db3ec (Update app.py)
