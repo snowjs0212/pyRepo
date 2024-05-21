@@ -1,2 +1,6 @@
 streamlit
 pandas
+os
+requests
+fredapi.Fred
+matplotlib.pyplot
