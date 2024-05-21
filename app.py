@@ -46,7 +46,8 @@ if uploaded_file:
     st.write(df_2.describe())
 
 #### Get data
-fred = Fred(api_key = fred_api_key)
+fred_api_key_input = fred_api_key
+fred = Fred(api_key = fred_api_key_input)
 
 ### Global price of Coffee, Robustas
 df_robus = fred.get_series('PCOFFROBUSDM')
