@@ -9,6 +9,8 @@ import streamlit as st
 import pandas as pd
 import os
 
+print(st.__version__)
+
 #### Headers
 st.title("Joonsoo's first test on streamlit")
 st.text("This is a testing environment to build a better analytics tool in the future.")
@@ -25,8 +27,8 @@ st.markdown("**Gayun** is my wife, and she is cute(?).")
 #    df = pd.read_csv(uploaded_file)
 #    st.write(df.describe())
 st.header("LookUp - Imunika coffee research data")
-df = pd.read_csv("Imunika_Pilot_Stage1_Final.csv")
-st.write(df.describe())
+df_1 = pd.read_csv("Imunika_Pilot_Stage1_Final.csv")
+st.write(df_1.describe())
 
 st.header("Data header summary")
 st.write(df_1.head(10))
