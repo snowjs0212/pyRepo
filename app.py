@@ -72,7 +72,7 @@ df = pd.merge(
 
 ### Data format changes
 #df.index = pd.to_datetime(df.index, format = '%m/%d/%Y').strftime('%Y-%m-%d')
-#df.index = pd.to_datetime(df.index).strftime('%Y-%m-%d')
+df.index = pd.to_datetime(df.index).strftime('%Y-%m-%d')
 df['close_date'] = df.index
 df = df.round(2)
 
