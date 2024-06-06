@@ -48,8 +48,7 @@ if uploaded_file:
     st.write(df_2.describe())
 
 #### API key
-#fred_api_key_input = st.secrets["fred_api_key"]
-fred_api_key_input = "7a3a846e27994737590201d1ed80f0f1"
+fred_api_key_input = st.secrets["fred_api_key"]
 fred = Fred(api_key = fred_api_key_input)
 
 ### Global price of Coffee, Robustas
